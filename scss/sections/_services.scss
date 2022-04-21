@@ -1,0 +1,63 @@
+@use '../custom' as*;
+
+.services{
+  position: relative;
+  
+    
+    &__content{
+        padding: 1rem;
+        margin-top: 0rem;
+
+
+        p{
+            font-size: 0.8rem;
+
+            @include media-breakpoint-up(lg){
+                font-size: 1rem;
+            }
+        }
+
+        @include media-breakpoint-up(lg){
+            margin-top: 5rem;
+        }
+
+        .icon{
+            font-size: x-small;
+            color: $primary;
+
+            @include media-breakpoint-up(lg){
+             font-size: 2.5rem;
+            }
+        }
+    }
+
+    
+}
+
+.services__pic{
+        max-width: 70%;
+    }
+
+.icon{
+    color: $primary;
+}
+
+.parrafo{
+    p{
+        font-size: medium;
+        color: $black;
+
+        @include media-breakpoint-up(lg){
+            font-size: larger;
+        }
+    }
+}
+
+
+.web{
+    #col1{
+        @include media-breakpoint-down(sm){
+            order: 2;
+        }
+    }
+}
